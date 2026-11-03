@@ -1,0 +1,4 @@
+{
+  "backup": ["nightly-backup", "Nightly backup"],
+  "report": ["weekly-report", "Weekly report"]
+}

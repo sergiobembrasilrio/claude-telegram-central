@@ -1,0 +1,6 @@
+# For transcribe.py only. Install in its own venv:
+#   python3 -m venv ~/claude-telegram-central/whisper/venv
+#   ~/claude-telegram-central/whisper/venv/bin/pip install -r requirements-whisper.txt
+# System packages: ffmpeg (also used for video frames).
+faster-whisper
+numpy

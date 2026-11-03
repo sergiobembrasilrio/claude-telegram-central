@@ -1,0 +1,41 @@
+# secrets and local configuration
+*.env
+!*.example.env
+.env.*
+pc.env
+telegram.env
+telegram-local.env
+*.pem
+*.key
+id_*
+
+# runtime data and logs
+*.log
+data/
+audios/
+received/
+downloads/
+hook-pending/
+*.jsonl
+!tests/**/*.jsonl
+telegram-offset.txt
+delivered.txt
+inbox-state.json
+watcher-state.json
+stalled.md
+*.lock
+*.tmp
+paused
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

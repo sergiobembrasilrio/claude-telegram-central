@@ -1,0 +1,7 @@
+# Replace /path/to/claude-telegram-central with where you cloned it. Data goes to CENTRAL_HOME
+# (default ~/claude-telegram-central/data). Each line runs every minute; flock stops overlaps.
+CENTRAL_ROOT=/path/to/claude-telegram-central
+* * * * * flock -n /tmp/central-bot.lock python3 $CENTRAL_ROOT/server/central.py
+* * * * * flock -n /tmp/central-files.lock python3 $CENTRAL_ROOT/server/receive_files.py
+# Only if you run the local Bot API server (setup_local_bot_api.sh adds this line itself):
+# * * * * * flock -n /tmp/central-botapi.lock $CENTRAL_ROOT/server/run_local_bot_api.sh
